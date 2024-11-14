@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/per-icon.webp
+  favicon: /images/person-avatar-0.webp
   # Site logo
-  logo: /images/per-icon.webp
+  logo: /images/person-avatar-0.webp
   # Site avatar
-  avatar: images/person-avatar.jpg
+  avatar: /images/person-avatar.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -204,11 +204,14 @@ navbar:
     说说:
       path: /essays
       icon: fa-regular fa-comments
-    Archives: 
+    相册: #相册
+      path: /masonry
+      icon: fa-solid fa-image
+    归档: 
       path: /archives
       icon: fa-regular fa-archive # can be empty
     分类:
-      path: /categories
+      path: /categories/
       icon: fa-regular fa-book
       # Status: 
     #   path: https://status.ohevan.com/
@@ -253,9 +256,9 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
+      Archives: 
+        path: /archives 
+        icon: fa-regular fa-archive # can be empty
       # Tags: 
       #   path: /tags 
       #   icon: fa-regular fa-tags # can be empty
@@ -465,7 +468,7 @@ page_templates:
   # Friend Links page column number
   friends_column: 2
   # Tags page style
-  tags_style: blur # blur, cloud
+  tags_style: cloud # blur, cloud
 # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
