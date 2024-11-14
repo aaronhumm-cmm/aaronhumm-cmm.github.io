@@ -17,7 +17,7 @@ info:
   # Author name
   author: 捏捏太一
   # Site URL
-  url: https://github.com/aaronhumm-cmm/aaronhumm-cmm.github.io
+  url: https://github.com/aaronhumm-cmm
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: /images/per-icon.webp
   # Site logo
-  logo: 
+  logo: /images/per-icon.webp
   # Site avatar
-  avatar: images/person-avatar.png
+  avatar: images/person-avatar.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -141,8 +141,8 @@ home_banner:
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
-    light: "#9dd5e4" # light mode
-    dark: "#00699f" # dark mode
+    light: "#00699f" # light mode
+    dark: "#9dd5e4" # dark mode
   # Specific style of the text
   text_style: 
     # Title font size
@@ -168,7 +168,7 @@ home_banner:
     style: default # default, reverse, center
     # Social links
     links:
-      github: https://www.github.com  # your GitHub URL
+      github: https://github.com/aaronhumm-cmm  # your GitHub URL
       # instagram: # your Instagram URL
       # zhihu:  # your ZhiHu URL
       # twitter:   # your twitter URL
@@ -201,19 +201,30 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
+    说说:
+      path: /essays
+      icon: fa-regular fa-comments
+    Archives: 
+      path: /archives
+      icon: fa-regular fa-archive # can be empty
+    分类:
+      path: /categories
+      icon: fa-regular fa-book
+      # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
+    # 标签
+    标签:
+      path: /tags/
+      icon: fa-regular fa-tags
+
+    关于: 
+      icon: fa-regular fa-user
+      submenus:
+        Me: /about
+        Github: https://github.com/aaronhumm-cmm
+        # Blog: https://ohevan.com
+        Friends: /friends
     # Links: 
     #   icon: fa-regular fa-link
     #   submenus:
@@ -390,7 +401,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2024/11/14 12:00:00
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
