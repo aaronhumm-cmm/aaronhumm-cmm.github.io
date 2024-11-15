@@ -438,10 +438,10 @@ plugins:
         url: 'https://m704.music.126.net/20241115224807/1925b9d30fae39f85e52463a5b4bd38f/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/15263637873/5a69/d565/ae84/6cb36b503fbaf93e37e1b7e681bf7d67.m4a' # audio url
         cover: http://p2.music.126.net/sq2MgxypSCODzMHULujMWw==/126443837212197.jpg # audio cover url
         lrc: # audio cover lrc
-      - name: '光るなら'
-        artist: 'Goose house'
-        url: https://cn-south-17-aplayer-46154810.oss.dogecdn.com/hikarunara.mp3
-        cover: https://cn-south-17-aplayer-46154810.oss.dogecdn.com/darling.jpg
+      - name: '打上花火'
+        artist: '蝶太 / 团小哈'
+        url: http://m704.music.126.net/20241115233036/86ae4ed34b8539b984cc9d3e0c0d4b86/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/30608162638/171c/3fb2/60e7/fc9ddca1b09ea998683846ffc7988ff7.mp3?authSecret=00000193305bb3b40beb0a3b1e6322f4
+        cover: http://p2.music.126.net/tuVeY1bsIvf_fdcG-Mc3yw==/109951168838084709.jpg
 
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
