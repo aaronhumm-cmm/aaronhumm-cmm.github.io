@@ -207,27 +207,16 @@ navbar:
     相册: #相册
       path: /masonry
       icon: fa-solid fa-image
-    归档: 
-      path: /archives
-      icon: fa-regular fa-archive # can be empty
-    分类:
-      path: /categories/
-      icon: fa-regular fa-book
       # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    # 标签
-    标签:
-      path: /tags/
-      icon: fa-regular fa-tags
-
     关于: 
       icon: fa-regular fa-user
       submenus:
         Me: /about
         Github: https://github.com/aaronhumm-cmm
         # Blog: https://ohevan.com
-        Friends: /friends
+        Friends: /links/
     # Links: 
     #   icon: fa-regular fa-link
     #   submenus:
@@ -252,20 +241,19 @@ home:
   sidebar:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
-    first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
+    first_item: info # First item in sidebar. menu, info
+    announcement: 捏捏太一の小博客正在搭建中…… # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
-    links:
-      Archives: 
-        path: /archives 
-        icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
-      # ...... # you can add more
+    links: #侧边导航栏
+      归档: # 显示的名字
+        path: /archives # 路径
+        icon: fa-regular fa-archive # 图标 可以为空
+      分类:
+        path: /categories/
+        icon: fa-regular fa-book #can be empty
+      标签:
+        path: /tags/
+        icon: fa-regular fa-tags
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article excerpt length
@@ -440,21 +428,21 @@ plugins:
   feed:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
-  aplayer:
-    enable: false # Whether to enable
-    type: fixed # fixed, mini
-    audios:
-      - name: # audio name
+  aplayer: # 播放器
+    enable: true # 启用 true/fasle
+    type: fixed # 播放器类型 固定/迷你 fixed/mini
+    # autoplay: true # 自动播放
+    audios: # 音乐源
+      - name: 义勇军进行曲 # 音乐名字
         artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
+        url: 'https://m704.music.126.net/20241115224807/1925b9d30fae39f85e52463a5b4bd38f/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/15263637873/5a69/d565/ae84/6cb36b503fbaf93e37e1b7e681bf7d67.m4a' # audio url
+        cover: http://p2.music.126.net/sq2MgxypSCODzMHULujMWw==/126443837212197.jpg # audio cover url
         lrc: # audio cover lrc
-#      - name: # audio name
-#        artist: # audio artist
-#        url: # audio url
-#        cover: # audio cover url
-#        lrc: # audio cover lrc
-      # .... you can add more audios here
+      - name: '光るなら'
+        artist: 'Goose house'
+        url: https://cn-south-17-aplayer-46154810.oss.dogecdn.com/hikarunara.mp3
+        cover: https://cn-south-17-aplayer-46154810.oss.dogecdn.com/darling.jpg
+
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
     enable: false # enable mermaid or not
@@ -465,12 +453,9 @@ plugins:
 # PAGE TEMPLATES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/page_templates
 page_templates:
-  # Friend Links page column number
-  friends_column: 2
-  # Tags page style
-  tags_style: cloud # blur, cloud
+  friends_column: 3 # 友链列数
+  tags_style: cloud # Tags page style blur, cloud
 # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-
 
 # CDN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/cdn

@@ -1,0 +1,8 @@
+- links_category: 对象 # 分类名
+  has_thumbnail: true #预览图（true/false)
+  list:
+    - name: 懒事屋
+      link: https://ataidawa.github.io/ #链接
+      description: 就算不是理工科也要耍博客! # 描述
+      avatar: https://ataidawa.github.io/images/avatar.jpg #头像
+      thumbnail: https://ataidawa.github.io/images/favicon.webp # 预览图（has_thumbnail 为 true 时才需要）
